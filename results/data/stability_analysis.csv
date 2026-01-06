@@ -1,0 +1,9 @@
+problem,integrator,max_stable_dt,order,symplectic
+Harmonic Oscillator,Forward Euler,0.28780554716721074,1,False
+Harmonic Oscillator,RK4,3.0045440592875403,4,False
+Harmonic Oscillator,RK45 (Adaptive),4.999999999999996,4,False
+Harmonic Oscillator,Velocity Verlet,2.021958133275019,2,True
+Nonlinear Pendulum,Forward Euler,2.9999999999999973,1,False
+Nonlinear Pendulum,RK4,4.999999999999996,4,False
+Nonlinear Pendulum,RK45 (Adaptive),4.999999999999996,4,False
+Nonlinear Pendulum,Velocity Verlet,4.999999999999996,2,True

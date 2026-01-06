@@ -1,0 +1,58 @@
+[
+  {
+    "problem": "Harmonic Oscillator",
+    "integrator": "Forward Euler",
+    "max_stable_dt": 0.28780554716721074,
+    "order": 1,
+    "symplectic": false
+  },
+  {
+    "problem": "Harmonic Oscillator",
+    "integrator": "RK4",
+    "max_stable_dt": 3.0045440592875403,
+    "order": 4,
+    "symplectic": false
+  },
+  {
+    "problem": "Harmonic Oscillator",
+    "integrator": "RK45 (Adaptive)",
+    "max_stable_dt": 4.999999999999996,
+    "order": 4,
+    "symplectic": false
+  },
+  {
+    "problem": "Harmonic Oscillator",
+    "integrator": "Velocity Verlet",
+    "max_stable_dt": 2.021958133275019,
+    "order": 2,
+    "symplectic": true
+  },
+  {
+    "problem": "Nonlinear Pendulum",
+    "integrator": "Forward Euler",
+    "max_stable_dt": 2.9999999999999973,
+    "order": 1,
+    "symplectic": false
+  },
+  {
+    "problem": "Nonlinear Pendulum",
+    "integrator": "RK4",
+    "max_stable_dt": 4.999999999999996,
+    "order": 4,
+    "symplectic": false
+  },
+  {
+    "problem": "Nonlinear Pendulum",
+    "integrator": "RK45 (Adaptive)",
+    "max_stable_dt": 4.999999999999996,
+    "order": 4,
+    "symplectic": false
+  },
+  {
+    "problem": "Nonlinear Pendulum",
+    "integrator": "Velocity Verlet",
+    "max_stable_dt": 4.999999999999996,
+    "order": 2,
+    "symplectic": true
+  }
+]
