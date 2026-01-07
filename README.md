@@ -39,6 +39,22 @@ This project implements and benchmarks four numerical integrators on physics pro
 
 Symplectic integrators (Verlet) maintain bounded energy drift over long times, while non-symplectic methods (RK4) accumulate energy errors. This is critical for molecular dynamics, celestial mechanics, and any simulation where physical conservation laws matter.
 
+### GPU Scaling (RTX 5090)
+
+![GPU Scaling](results/figures/gpu_scaling.png)
+
+GPU acceleration shows significant speedups for large batch sizes:
+
+| Batch Size | CPU Time | GPU Time | Speedup |
+|------------|----------|----------|---------|
+| 1,000 | 26ms | 295ms | 0.09x (CPU faster) |
+| 100,000 | 4.3s | 490ms | **8.85x** |
+| 1,000,000 | 49.4s | 2.4s | **20.94x** |
+
+**Key insight**: GPU crossover point is ~50,000 particles. Below that, CPU wins due to GPU overhead.
+
+> **RTX 50-series users**: See [docs/RTX_5090_CUPY_SETUP.md](docs/RTX_5090_CUPY_SETUP.md) for CuPy setup instructions.
+
 ## Installation
 
 ```bash
