@@ -1,6 +1,6 @@
 # CuPy Setup for RTX 5090 / RTX 50-Series (Blackwell Architecture)
 
-**The Problem**: RTX 5090, 5080, 5070 (Blackwell GPUs) don't work with pre-built CuPy packages because they require CUDA 13+ and compute capability 10.0+, which aren't included in standard CuPy wheels.
+**The Problem**: RTX 5090, 5080, 5070 (Blackwell GPUs) don't work with pre-built CuPy packages because they require CUDA 13+ and compute capability 12.0 (Blackwell), which aren't included in standard CuPy wheels.
 
 **The Solution**: Build CuPy from source with CUDA 13.1.
 
@@ -202,8 +202,8 @@ pip install setuptools wheel
 
 ## Why This Works
 
-1. **RTX 50-series (Blackwell)** has compute capability 10.0+
-2. **Pre-built CuPy wheels** only support up to compute capability ~9.x
+1. **RTX 50-series (Blackwell)** has compute capability 12.0
+2. **Pre-built CuPy wheels** only support up to compute capability ~9.x (Ada Lovelace)
 3. **CUDA 13.1** is the first CUDA version with full Blackwell support
 4. **Building from source** compiles CUDA kernels specifically for your GPU
 
